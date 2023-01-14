@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to meditate and More</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <h1 class="title">How To Meditate?</h1>
+    <h2 class="title-ways">Three ways to get prepare to meditate</h2>
+    <button class="btn"><a href="index.html" style="text-decoration: none; color: black;">Back</a></button>
+    <div class="ways-cont">
+        <p class="ways">Find the right spot</p>
+        <span class="text-ways">It is very important to find a spot where you will not be disturbed</span>
+        <p class="ways">Try to relax your body</p>
+        <span class="text-ways">Relaxing your body is essential to get in a state where you can start to get focus on your meditation</span>
+        <p class="ways">Focus your attention on your breath</p>
+        <span class="text-ways">Putting all your attention on your breath is important to quiet your mind, experience inner peace and silent of all toughts</span>
+    </div>
+    <h2 class="title-sut">Sutras</h2>
+    <h3 class="subtitle-sut">A sutra is a religious teaching, usually taking the form of an aphorism or short statement of beliefs.</h3>
+    <div class="sut-cont">
+        <p class="sutra">Aham Brahmasmi</p>
+        <span class="meaning">Connects you to the field of infinite energy and universal intelligence.</span>
+        <p class="sutra">Tat Tvam Asi</p>
+        <span class="meaning">Asks you to begin to perceive the world as a mirror of your own consciousness.</span>
+        <p class="sutra">Sat Chit Ananda</p>
+        <span class="meaning">Principle of truth, pure consciousness, and complete bliss. This sutra will help to connect you to the inner fire of your soul.</span>
+        <p class="sutra">San Kalpa</p>
+        <span class="meaning">Call for intention, and a higher awareness of the actions you perform in this life. When you begin to clarify your intentions, you set the stage for the fulfillment of any desire.</span>
+        <p class="sutra">Moksha</p>
+        <span class="meaning">Refers to a state of total enlightenment through the path of self-liberation.</span>
+        <p class="sutra">Shiva-Shakti</p>
+        <span class="meaning">Means pure potential energy on one hand and solid elementals and manifestation on the other.</span>
+        <p class="sutra">Ritam</p>
+        <span class="meaning">Will help you open to receiving the benefits of synchronicity into your life. As you become receptive, you begin to see new possibilities unfold before you, and these possibilities and potentials begin to play themselves out through a series of unlikely, beneficial coincidences.</span>
+    </div>
+    <img name="slider" src="https://th.bing.com/th/id/R.6fae871d02f7996c1b3b8b396e3f4632?rik=pPQRsmhX6TBa8Q&riu=http%3a%2f%2fwww.pacificreps.com%2fwp-content%2fuploads%2f2018%2f12%2fMAURICIO1.jpg&ehk=sEsw4nZNn0ZJ%2bpp3Hd9zvle4MpxV59Qeqe9FQGS9%2fYo%3d&risl=&pid=ImgRaw&r=0" width="500px" height="500px" id="img-how"/>
+    <script>
+        window.addEventListener("load", () => {
+            let img = []
+
+            img[0] = "https://th.bing.com/th/id/OIP.Yz1hZXVBwxlWUaZYKUEquwHaGl?pid=ImgDet&rs=1"
+            img[1] = "https://th.bing.com/th/id/R.e420090fb51b45eb88f5043078391d1d?rik=7p4m78K692evGQ&pid=ImgRaw&r=0"
+            img[2] = "https://th.bing.com/th/id/OIP.fO5fYManpBb_cfxj66YxJAHaJQ?pid=ImgDet&rs=1"
+            img[3] = "https://th.bing.com/th/id/R.6fae871d02f7996c1b3b8b396e3f4632?rik=pPQRsmhX6TBa8Q&riu=http%3a%2f%2fwww.pacificreps.com%2fwp-content%2fuploads%2f2018%2f12%2fMAURICIO1.jpg&ehk=sEsw4nZNn0ZJ%2bpp3Hd9zvle4MpxV59Qeqe9FQGS9%2fYo%3d&risl=&pid=ImgRaw&r=0"
+
+            let i = 0;
+
+            function cambia(){
+                document.slider.src = img[i]
+
+                if(i < 3){
+                    i++
+                } else {
+                    i = 0;
+                }
+
+            }
+            setInterval(cambia, 2000);
+        })
+    </script>
+</body>
+</html>

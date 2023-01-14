@@ -1,3 +1,5 @@
+@import 'animate.css';
+
 * {
     margin: 0;
     padding: 0;
@@ -45,14 +47,19 @@ ul li:hover {
     width: 400px;
     height: 400px;
     opacity: 0.8;
-    border-radius: 20px;
+    border-radius: 80%;
     transition: all 1s;
 }
 
 .img-cont img:hover {
     opacity: 1;
-    transform: scale(1.1);
-    border: 2px black solid;
+    border: 2px blue double;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px black;
+    padding: 2px;
+
+    animation: rubberBand;
+    animation-duration: 2s;
 }
 
 .img-cont {
@@ -73,6 +80,12 @@ ul li:hover {
     font-size: 50px;
     margin-bottom: 10px;
 }
+
+.title:hover {
+    animation: hinge;
+    animation-duration: 2s;
+}
+
 
 .ask {
     font-size: 35px;
@@ -112,15 +125,221 @@ ul li:hover {
     color: white;
     position: relative;
     top: 200px;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 3px 3px 3px black;
 }
 
 .overlay h2 {
     text-align: center;
-    text-shadow: 2px 2px 2px white;
+    text-shadow: 0 0 20px white;
     font-size: 80px;
 }
 
 .img-over:hover .overlay {
     height: 100%;
+
+    animation: jackInTheBox;
+    animation-duration: 1s;
+}
+
+.btn, #btn_collage {
+    position:absolute;
+    right: 60px;
+    top: 30px;
+    padding: 10px;
+    border: none;
+    font-style: italic;
+    letter-spacing: 1pt;
+    border-radius: 10px;
+    box-shadow: 0 0 20px blue;
+    text-shadow: 0 0 10px blue;
+    font-weight: 700;
+    transition: all 1s;
+}
+
+.btn:hover, #btn_collage:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px violet;
+    text-shadow: 0 0 10px violet;
+}
+
+#btn_collage{
+    left: 20px;
+    width: 150px;
+}
+
+/* ---------------------------------- How to meditate styles --------*/
+
+.title-ways {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 8pt;
+    font-style: italic;
+}
+
+.ways-cont {
+    position: relative;
+    left: 250px;
+    background-color:rgba(0, 0, 255, 0.657);
+    text-align: center;
+    width: 900px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.ways {
+    font-size: 25px;
+    text-shadow: 0 0 15px white;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.ways::first-letter {
+    font-style: italic;
+    font-size: 35px;
+    text-shadow: 0 0 20px black;
+}
+
+.ways:hover {
+    animation: tada;
+    animation-duration: 1s;
+}
+
+.text-ways{
+    font-size: 20px;
+    font-weight: 100;
+    transition: all 0.5s;
+}
+
+.text-ways:hover {
+    font-size: 22px;
+    cursor: help;
+    color: aliceblue;
+    text-shadow: 0 0 10px white;
+}
+
+.title-sut {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 8pt;
+    font-style: italic;
+}
+
+.subtitle-sut {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 5pt;
+    font-style: italic;
+    padding: 2px;
+}
+
+.sut-cont {
+    position: relative;
+    left: 80px;
+    background-color: rgba(238, 130, 238, 0.674);
+    text-align: center;
+    width: 1200px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.sutra {
+    font-size: 25px;
+    text-shadow: 0 0 15px yellow;
+    font-weight: 900;
+    margin-bottom: 5px;
+    transition: all 0.5s;
+}
+
+.sutra::first-letter {
+    font-style: italic;
+    font-size: 35px;
+    text-shadow: 0 0 20px yellowgreen;
+}
+
+.sutra:hover {
+    animation: heartBeat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.sutra:hover::after {
+    content: '💜';
+}
+
+.meaning {
+    font-size: 20px;
+    font-weight: 100;
+    transition: all 0.5s;
+}
+
+.meaning:hover {
+    font-size: 22px;
+    cursor: help;
+    color: blue;
+    text-shadow: 0 0 10px blue;
+}
+
+#img-how{
+    position: relative;
+    left: 440px;
+    margin-top: 20px;
+    border-radius: 80%;
+    border: 1px solid black;
+    padding: 7px;
+    background: linear-gradient(white, gray);
+    box-shadow: 0 0 40px black;
+}
+
+
+/*------------------------Collage---------------------*/
+
+
+.cont_img-collage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cont_img-collage img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    background: linear-gradient(blue, white, black);
+    padding: 2px;
+    box-shadow: 0 0 10px white;
+    transition: 1s;
+
+    animation: backInRight;
+    animation-duration: 2s;
+}
+
+.cont_img-collage img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px black;
+}
+
+
+#btn-art {
+    background: linear-gradient(blue, black);
+    text-shadow: 0 0 3px white;
+    box-shadow: 0 0 10px white;
+    top: 1100px;
+    right: 100px;
+    width: 100px;
+    font-size: 50px;
+    font-style: normal;
+} 
+
+#btn-art:hover{
+    border-bottom: 5px inset black;
+    border-left: 5px inset black;
+    box-shadow: 0 0 10px blue;
+
 }
