@@ -167,6 +167,48 @@ ul li:hover {
     width: 150px;
 }
 
+/********Responsive Design*****************/
+
+@media (max-width:600px) {
+    .btn_mb{
+        font-size: 10px;
+        width: 20%;
+        right: 0;
+        top: 5px;
+    }
+
+    #btn_collage{
+        font-size: 10px;
+        left: 0;
+        top: 5px;
+        width: 20%;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .ask {
+        font-size: 25px;
+    }
+
+    .ask-cont ul{
+        font-size: 20px;
+    }
+
+    .img-cont img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .overlay h1, h2 {
+        font-size: 22px;
+    }
+
+}
+
+
+
 /* ---------------------------------- How to meditate styles --------*/
 
 .title-ways {
@@ -296,6 +338,52 @@ ul li:hover {
 }
 
 
+/***************Responsive Design****************/
+@media (max-width:600px) {
+    .title_ways {
+        font-size: 18px;
+    }
+
+    .ways-cont {
+        left: 15px;
+        width: 90%;
+    }
+
+    .ways {
+        font-size: 15px;
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .text-ways {
+        font-size: 13px;
+    }
+
+    .title-sut, .subtitle-sut {
+        font-size: 20px;
+    }
+
+    .sut-cont{
+        left: 15px;
+        width: 90%;
+    }
+
+    .sutra{
+        font-size: 15px;
+    }
+
+    .meaning{
+        font-size: 13px;
+    }
+
+    #img-how {
+        left: 80px;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
 /*------------------------Collage---------------------*/
 
 
@@ -342,4 +430,14 @@ ul li:hover {
     border-left: 5px inset black;
     box-shadow: 0 0 10px blue;
 
+}
+
+/***************Responsive Design********************/
+@media (max-width:600px) {
+    #btn-art {
+        font-size: 20px;
+        width: 50px;
+        right: 15px;
+        top: 2000px;
+    }
 }
