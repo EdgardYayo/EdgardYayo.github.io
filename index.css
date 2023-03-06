@@ -1,8 +1,10 @@
 @import 'animate.css';
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 body {
@@ -91,12 +93,21 @@ ul li:hover {
     font-size: 35px;
     font-style: italic;
     font-weight: 900;
-    margin-bottom: 5px;
-    transition: all 1s;
+    margin: 15px auto;
+    width: fit-content;
+    transition: all 300ms ease-in-out;
 }
 
 .ask:hover {
     transform: scale(1.2);
+    color: white;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.76), rgba(255, 255, 255, 0.366));
+    text-shadow: 2px 2px 10px blue;
+    border: 5px double rgba(24, 8, 241, 0.435);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px black;
+
 }
 
 .img-over {
@@ -150,16 +161,16 @@ ul li:hover {
     font-style: italic;
     letter-spacing: 1pt;
     border-radius: 10px;
-    box-shadow: 0 0 20px blue;
-    text-shadow: 0 0 10px blue;
+    box-shadow: 0 0 20px violet;
+    text-shadow: 0 0 10px violet;
     font-weight: 700;
-    transition: all 1s;
+    transition: all 250ms ease-in-out;
 }
 
 .btn:hover, #btn_collage:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 20px violet;
-    text-shadow: 0 0 10px violet;
+    box-shadow: 0 0 20px blue;
+    text-shadow: 0 0 10px blue;
 }
 
 #btn_collage{
@@ -212,12 +223,20 @@ ul li:hover {
 /* ---------------------------------- How to meditate styles --------*/
 
 .title-ways {
+    text-shadow: black 0 0 10px;
     text-align: center;
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 8pt;
     font-style: italic;
+    background: linear-gradient(-90deg, rgba(0, 0, 255, 0.766), rgba(255, 192, 203, 0.366));
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset black 0 0 10px;
 }
+
 
 .ways-cont {
     position: relative;
@@ -264,7 +283,6 @@ ul li:hover {
 .title-sut {
     text-align: center;
     font-size: 30px;
-    margin-top: 20px;
     letter-spacing: 8pt;
     font-style: italic;
 }
@@ -276,6 +294,16 @@ ul li:hover {
     letter-spacing: 5pt;
     font-style: italic;
     padding: 2px;
+}
+
+.title-sut, .subtitle-sut {
+    background: linear-gradient(-90deg, rgba(255, 192, 203, 0.763), rgba(0, 0, 255, 0.364));
+    margin: 10px auto;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: inset black 0 0 10px;
+    text-shadow: 0 0 10px black;
 }
 
 .sut-cont {
@@ -322,8 +350,8 @@ ul li:hover {
 .meaning:hover {
     font-size: 22px;
     cursor: help;
-    color: blue;
-    text-shadow: 0 0 10px blue;
+    color:yellow;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 #img-how{
